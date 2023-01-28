@@ -10,7 +10,7 @@ if (isset($_POST['add-student'])) {
     //$quy = "INSERT INTO `student_info`(`name`, `roll`, `class`, `city`, `pcontact`) VALUES ('$name','$roll','$class','$city','$pcontact')";
     $result = mysqli_query($link, "INSERT INTO `student_info`(`name`, `roll`, `class`, `city`, `pcontact`) VALUES ('$name','$roll','$class','$city','$pcontact')") or die(mysqli_error($link));
     if ($result) {
-        $success = "Data Insert Success!";
+        $success = "Data Insert Success!!";
     } else {
         $error = "Something might be wrong";
     }
